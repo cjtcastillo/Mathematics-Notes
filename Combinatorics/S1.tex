@@ -1,0 +1,99 @@
+\begin{theorem}[Addition Principle]
+	Let $A_1, A_2, \dots, A_n$ be pairwise disjoint finite sets, so that
+	\[
+	A_i \cap A_j = \varnothing \quad \text{for } i \neq j.
+	\]
+	Then
+	\[
+	\left| \bigcup_{i=1}^n A_i \right|
+	= \sum_{i=1}^n |A_i|.
+	\]
+\end{theorem}
+\begin{remark}
+	If the sets $A_1, \dots, A_n$ are not pairwise disjoint, the formula
+	$\left|\bigcup_i A_i\right| = \sum_i |A_i|$ can fail because overlapping
+	elements would be counted twice. Observe figure 1.2 for specific example. However, modification to the principle via compensation of the over-count corrects such issues:
+	\begin{equation*}
+		|A|+|B| - |A\cap B|
+	\end{equation*}
+\end{remark}
+\begin{marginfigure}[-50mm]
+	\begin{center}
+		\includegraphics[scale=.5]{2count}
+		\caption{Two sets $A$ and $B$ with overlap. In the specific figure, the principle would produce a 6 count when there are only really 5}.
+	\end{center}
+\end{marginfigure}
+\vspace{-2mm}
+\begin{proof}
+	Since the sets $A_1, \dots, A_n$ are pairwise disjoint, each element of
+	\(\bigcup_{i=1}^n A_i\) belongs to exactly one of the sets $A_i$.
+	Thus no element is counted more than once when summing their cardinalities.
+	Therefore,
+	\[
+	\left| \bigcup_{i=1}^n A_i \right|
+	= |A_1| + |A_2| + \cdots + |A_n|.
+	\]
+\end{proof}
+
+\begin{theorem}[Multiplication Principle]
+	Let an experiment consist of $k$ stages, where stage $i$ admits $n_i$ possible
+	outcomes for each outcome of the previous stages. Then the total number of
+	possible outcomes of the experiment is
+	\[
+	n_1 n_2 \cdots n_k.
+	\]
+\end{theorem}
+
+
+\begin{proof}
+	Let $S_i$ denote the finite set of possible outcomes at stage $i$.
+	An outcome of the experiment is determined by choosing one element from each
+	$S_i$, so the sample space is the Cartesian product
+	\[
+	S = S_1 \times S_2 \times \cdots \times S_k.
+	\]
+	By the definition of Cartesian product,
+	\[
+	|S| = |S_1|\,|S_2|\cdots|S_k| = n_1 n_2 \cdots n_k.
+	\]
+\end{proof}
+
+
+In general, we can depict the multiplication principle by a tree representing selection at each stage.
+\begin{fullwidth}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[
+			grow=right,
+			scale=0.8,
+			transform shape,
+			level distance=4.2cm,   % <-- THIS is what makes it span the page
+			sibling distance=1.3cm,
+			edge from parent/.style={draw, thick},
+			every node/.style={font=\small},
+			anchor=west
+			]
+			
+			\node {Start}
+			child { node {$a_1^{(1)}$}
+				child { node {$a_2^{(1)}$}
+					child { node {$a_3^{(1)}$}
+						child { node {$\vdots$} }
+						child { node {$a_k^{(1)}$} }
+					}
+					child { node {$\vdots$} }
+					child { node {$a_3^{(n_3)}$} }
+				}
+				child { node {$\vdots$} }
+				child { node {$a_2^{(n_2)}$} }
+			}
+			child { node {$\vdots$} }
+			child { node {$a_1^{(n_1)}$} };
+			
+		\end{tikzpicture}
+		
+		\caption{A horizontal choice tree illustrating the Multiplication Principle.
+			Each level represents a stage of choice, and each root-to-leaf path corresponds
+			to a unique outcome.}
+	\end{figure}
+\end{fullwidth}

@@ -1,0 +1,28 @@
+	In the first section, we specifically examined pairwise disjoint sets to ensure proper behavior of counting. Now we expand on the addition principle to examine less ideal families of sets.
+\begin{theorem}[Inclusion-Exclusion Principle]
+	Let $A_1,..., A_n$ be finite sets. Then
+	\[
+	\left|\bigcup_{i=1}^n A_i\right|
+	= \sum_{\emptyset \neq \mathcal{I} \subseteq \{1,2,\dots,n\}} 
+	(-1)^{|\mathcal{I}|+1} \left|\bigcap_{i \in \mathcal{I}} A_i\right|.
+	\]
+\end{theorem}
+\begin{remark}
+	The expanded version of the formula above;
+	\[
+	\left|\bigcup_{i=1}^n A_i\right| 
+	= \sum_{i=1}^{n} |A_i| 
+	- \sum_{1 \le i < j \le n} |A_i \cap A_j| 
+	+ \sum_{1 \le i < j < k \le n} |A_i \cap A_j \cap A_k| 
+	- \cdots 
+	+ (-1)^{n+1} |A_1 \cap A_2 \cap \cdots \cap A_n|.
+	\]
+\end{remark}
+\begin{proof}
+	We'll use mathematical induction. Assume that $A_i$ are non-pairwise disjoint sets. First, considering the trivial/base case for $n=2$, we know from the addition principle \sidenote{Also verify that this is true through directly plugging $n=2$ into equation.}
+	\begin{equation*}
+		|A_1 \cup A_2 | = |A_1|+|A_2| - |A \cap B|
+	\end{equation*}
+	
+\end{proof}
+

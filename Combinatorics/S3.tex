@@ -1,0 +1,93 @@
+	Previously, for permutations we specifically cared about the ordering of the selections and distinguished them that way. Now, we look at the case for when we \textit{do not} consider the order. We derive the formula for \( \binom{n}{k} \) by separating the notions of
+\emph{order} and \emph{choice}.\marginnote{Key idea: count something \emph{with} order, then divide the order out.} Return to the original partial permutation formulation
+\begin{equation*}
+	P(n,k) = \frac{n!}{(n-k)!}
+\end{equation*}
+
+Each unordered \( k \)-element subset is counted once for every permutation of
+its elements. Since a set of \( k \) elements has \( k! \) orderings, we divide by \( k! \) to
+correct for overcounting/collapse all orderings to one count.
+\begin{definition}
+	For integers \( n,k \) with \( 0 \le k \le n \), the \textbf{binomial coefficient}
+	\[
+	\binom{n}{k}
+	\]
+	is defined by \marginnote{Another useful way to interpret combinations is as the \emph{cardinality} of the collection of all $k$-element subsets of a given set.
+	}
+	\[
+	\binom{n}{k} := \frac{n!}{k!(n-k)!}.
+	\]
+\end{definition}
+\begin{eg}\label{eg1}
+	Consider the set $\set{A,B,C}$ and suppose we want to choose 2 letters, where order does not matter. The ordered selections of 2 distinct letters will look like:
+	\begin{align*}
+		(A,B)&,(B,A) \\
+		(A,C)&,(C,A)\\
+		(B,C)&,(C,B) 
+	\end{align*}
+	There are exactly 6 pairs. Notice that for each selection of 2 letters we have $2!$ permutations. Now using $2!$ to collapse ordered pairs to a subset \begin{marginfigure}[-20mm]
+		
+		\begin{center}
+			\includegraphics[scale=.3]{BCE}
+			\caption{Illustration of Example \ref{eg1}. (1) being initial selection. (2) being results after permutations decided. (3) After collapsing redundancies.}
+		\end{center}
+		
+	\end{marginfigure}
+	\begin{align*}
+		(A,B)&,(B,A) \to \set{A,B} \\
+		(A,C)&,(C,A) \to \set{A,C}\\
+		(B,C)&,(C,B) \to \set{B,C}
+	\end{align*}
+	so only 3 distinct subsets remain.
+\end{eg}
+
+\begin{theorem}[Identities]
+	Binomial coefficients satisfy the following identities, 
+	\begin{enumerate}[label=\roman*)]
+		\item $\binom{n}{k} = \binom{n}{n-k}$
+		\item $\binom{n}{k} = \binom{n-1}{k}+ \binom{n-1}{k-1}$
+		\item $\binom{n}{0}+\binom{n}{1}+\cdots+\binom{n}{n-1}+\binom{n}{n} = 2^n$
+	\end{enumerate}
+\end{theorem}
+\begin{proof}
+	~ \marginnote{Note that part (iii) can be viewed as a count of all subsets of all sizes. Take $X = \set{1,2}$ for example. Each binomial coefficient corresponds as the following
+	\begin{align*}
+		\binom{2}{0} &\to \es \\
+		\binom{2}{1} &\to \set{1},\set{2} \\
+		\binom{2}{2} &\to \set{1,2}
+	\end{align*}}[-20mm]
+	\begin{enumerate}[label=\roman*)]
+		\item
+		Let $S$ be a set with $|S| = n$. Choosing a subset of $S$ with $k$ elements is equivalent
+		to choosing which $n-k$ elements are excluded. Hence there is a bijection between
+		$k$-element subsets and $(n-k)$-element subsets of $S$, so
+		\[
+		\binom{n}{k} = \binom{n}{n-k}.
+		\]
+		
+		\item
+		Let $S$ be a set with $|S| = n$ and fix an element $x \in S$.
+		Every $k$-element subset of $S$ either contains $x$ or does not contain $x$.
+		If it does not contain $x$, the $k$ elements are chosen from the remaining $n-1$
+		elements, giving $\binom{n-1}{k}$ possibilities.
+		If it does contain $x$, the remaining $k-1$ elements are chosen from the remaining
+		$n-1$ elements, giving $\binom{n-1}{k-1}$ possibilities.
+		Since these two cases are disjoint and exhaustive, we obtain
+		\[
+		\binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1}.
+		\]
+		
+		\item
+		Let $S$ be a set with $|S| = n$. The number of subsets of $S$ with exactly $k$ elements
+		is $\binom{n}{k}$. Summing over all possible values of $k$ counts all subsets of $S$:
+		\[
+		\sum_{k=0}^n \binom{n}{k}.
+		\]
+		Alternatively, each element of $S$ may be either included or excluded from a subset,
+		giving $2$ choices per element and hence $2^n$ subsets in total.
+		Therefore,
+		\[
+		\binom{n}{0}+\binom{n}{1}+\cdots+\binom{n}{n} = 2^n.
+		\]
+	\end{enumerate}
+\end{proof}
