@@ -7,6 +7,9 @@
 Each unordered \( k \)-element subset is counted once for every permutation of
 its elements. Since a set of \( k \) elements has \( k! \) orderings, we divide by \( k! \) to
 correct for overcounting/collapse all orderings to one count.
+
+\newpage
+
 \begin{definition}
 	For integers \( n,k \) with \( 0 \le k \le n \), the \textbf{binomial coefficient} is defined by the collection of all $k$-element subsets of a given set.
 	\begin{equation}
@@ -36,7 +39,7 @@ correct for overcounting/collapse all orderings to one count.
 \end{eg}
 
 \begin{eg}
-	Roll a six sided dice 10 total times. The total outcomes where two 1s are present is $\binom{10}{2}$. But now consider if we require that two 1s are present and consecutive in the order of the rolls. We treat the two 1s as a block. The total unique block slots out of 10 slots is 7. Then the outcomes with this condition is now $\binom{7}{2}$.
+	Roll a six sided dice 10 total times. The total outcomes where exactly two 1s are present is $\binom{10}{2}\cdot 5^8$. We came to this conclusion by treating each roll (1-10) as a slot for which the 1s can go. But now consider if we require that two 1s are present and consecutive in the order of the rolls. We treat the two 1s as a block. The total unique block slots can be calculated as $n-k+1$ which yields 7. Then the outcomes with this condition is now $\binom{7}{2}\cdot 5^8$.
 \end{eg}
 
 \begin{theorem}[Identities]

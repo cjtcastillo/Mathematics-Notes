@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.24)  2 FEB 2026 21:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.24)  3 FEB 2026 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1074,34 +1074,34 @@ Package: figureversions 2025-04-29 v1.0.1 Figure versions
 LaTeX Info: Redefining \oldstylenums on input line 902.
 )
 LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line
- 8.
+ 11.
 
 (c:/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 8.
+(Font)              scaled to size 12.0pt on input line 11.
  (./Combinatorics.aux)
 \openout1 = `Combinatorics.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1163,9 +1163,9 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 8.
+ on input line 11.
 
-Package hyperref Info: Link coloring ON on input line 8.
+Package hyperref Info: Link coloring ON on input line 11.
 (./Combinatorics.out) (./Combinatorics.out)
 \@outlinefile=\write4
 \openout4 = `Combinatorics.out'.
@@ -1173,31 +1173,31 @@ Package hyperref Info: Link coloring ON on input line 8.
 \c@mv@tabular=\count373
 \c@mv@boldtabular=\count374
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 14.
+(Font)              scaled to size 20.74pt on input line 17.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 14.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+(Font)              scaled to size 14.4pt on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
 
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 17
 .
 
 (c:/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 14.
+(Font)              scaled to size 17.28pt on input line 17.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 14.
+(Font)              scaled to size 17.28pt on input line 17.
  (./Combinatorics.toc
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -1211,7 +1211,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/
 texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 18.
+(Font)              scaled to size 14.4pt on input line 21.
  (./S1.tex
 LaTeX Font Info:    Trying to load font information for T1+qhv on input line 1.
 
@@ -1230,7 +1230,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 13.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 42.
+(Font)              scaled to size 12.0pt on input line 37.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1242,7 +1242,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2{c:/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{c:/texli
 ve/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 65.
+(Font)              scaled to size 10.95pt on input line 66.
 ) (./S2.tex
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 6.
@@ -1276,10 +1276,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-<BCE.png, id=89, 547.0839pt x 429.0429pt>
+<BCE.png, id=97, 547.0839pt x 429.0429pt>
 File: BCE.png Graphic file (type png)
 <use BCE.png>
-Package pdftex.def Info: BCE.png  used on input line 32.
+Package pdftex.def Info: BCE.png  used on input line 35.
 (pdftex.def)             Requested size: 164.12643pt x 128.71385pt.
 
 
@@ -1298,23 +1298,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]) (./S4.tex
-<IEP.png, id=116, 286.00853pt x 215.3646pt>
+<IEP.png, id=126, 286.00853pt x 215.3646pt>
 File: IEP.png Graphic file (type png)
 <use IEP.png>
 Package pdftex.def Info: IEP.png  used on input line 11.
 (pdftex.def)             Requested size: 171.60643pt x 129.21974pt.
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <c:/Users/Connor/.texlive2024/texmf/tex/latex/my_figures/IEP.png>]
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 19.
-)
+ line 17.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1322,19 +1316,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9] (./Combinatorics.aux)
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9 <c:/Users/Connor/.texlive2024/texmf/tex/latex/my_figures/IEP.png>])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10] (./Combinatorics.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `Combinatorics.out' has not changed.
-(rerunfilecheck)             Checksum: 46ABF93CB6BF6E0CD1813BA60808B509;751.
+(rerunfilecheck)             Checksum: 7E059EF799FBECE3BA36D788975B8721;1181.
  ) 
 Here is how much of TeX's memory you used:
- 39231 strings out of 467538
- 893996 string characters out of 5423724
+ 39238 strings out of 467538
+ 894084 string characters out of 5423724
  1401062 words of memory out of 5000000
- 67366 multiletter control sequences out of 15000+600000
+ 67368 multiletter control sequences out of 15000+600000
  682408 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,17n,122p,761b,1625s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1352,10 +1362,10 @@ live/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive
 onts/type1/public/newtx/ztmb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public
 /newtx/ztmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
 
-Output written on Combinatorics.pdf (9 pages, 468409 bytes).
+Output written on Combinatorics.pdf (10 pages, 473482 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 58 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 
