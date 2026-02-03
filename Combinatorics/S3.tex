@@ -41,7 +41,9 @@ correct for overcounting/collapse all orderings to one count.
 \begin{eg}
 	Roll a six sided dice 10 total times. The total outcomes where exactly two 1s are present is $\binom{10}{2}\cdot 5^8$. We came to this conclusion by treating each roll (1-10) as a slot for which the 1s can go. But now consider if we require that two 1s are present and consecutive in the order of the rolls. We treat the two 1s as a block. The total unique block slots can be calculated as $n-k+1$ which yields 7. Then the outcomes with this condition is now $\binom{7}{2}\cdot 5^8$.
 \end{eg}
-
+\begin{eg}
+	Consider a bus with 30 seats. Suppose 10 passengers enter the bus and we are only interested in which seats are occupied, not which passenger sits in which seat. Treating the passengers as indistinguishable, each seating configuration corresponds to a choice of 10 occupied seats from the 30 available. Hence, the total number of configurations is $\binom{30}{10}$.
+\end{eg}
 \begin{theorem}[Identities]
 	Binomial coefficients satisfy the following identities, 
 	\begin{enumerate}[label=\roman*)]
