@@ -1,0 +1,29 @@
+Earlier, in section 1 we discussed counting principles under the assumption that sets were explicitly disjoint. Such conditions created scenarios for which \textit{over-counting} wasn't possible.
+\begin{theorem}[Inclusion-Exclusion Principle]
+	Let $A_1,\dots, A_n$ be finite sets. Then 
+	\begin{equation}
+		\bigg | \bigcup^{n}_{i=1}A_i \bigg |  = \sum^{n}_{i=1}|A_i| - \sum_{1\leq i \leq j \leq n}|A_i \cap A_j| + \cdots + (-1)^{n-1}|A_1\cap \dots \cap A_n|
+	\end{equation}
+\end{theorem}
+The proof will be left up to exercise. Visually we may represent the principle with a small family first.
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=.6]{IEP}
+		\caption{The Inclusion-Exclusion Principle}
+		\label{Figure:IEP}
+	\end{center}
+\end{figure}
+
+In Figure \ref{Figure:IEP}, all points in each $A_i$ are first counted once. So we add all to the count individually as $|A_i|$. Now consider the individual intersections. The points in each intersection (RGB) are counted again. So we have to remove them through double intersections $|A_i\cap A_j|$. However, during that process we also removed the points in the triple intersection (purple) completely ("uncounted three times"). Thus, we compensate by adding $|A_1\cap A_2\cap A_3|$. In the end, we have an accurate count.
+\begin{remark}
+	The Inclusion Exclusion Principle is applicable to both permutations and combinations.
+\end{remark}
+
+\begin{eg}
+	Consider the number of integers from 1 to 100 are divisible by 2 or 3. Let
+	\begin{equation*}
+		A = \set{n:2| n}, \quad B = \set{n: 3| n}
+	\end{equation*}
+	Then we have that $|A| = 50$, $|B| = 33$ and $|A \cap B| =16$. The final count is 67.
+\end{eg}
+
