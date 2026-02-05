@@ -32,8 +32,18 @@ which describes the exact conditions needed for $S$ to be used to form a quotien
 		I = (a):= \set{ra: r \in R}
 	\end{equation*}
 \end{definition}
+\begin{proposition}
+	A commutative ring $R$ is a field if and only if it has no proper ideals.
+\end{proposition}
 
-\newpage
+\begin{proof}
+	$(\Rightarrow)$ If $R$ is a field, then every nonzero element is a unit.
+	Thus any ideal containing a nonzero element must contain $1$, and hence must equal $R$.
+	
+	$(\Leftarrow)$ If $R$ has no proper ideals and $a \neq 0$, then $(a) = R$.
+	Thus $1 \in (a)$, so there exists $b \in R$ with $ba = 1$, showing that $a$ is a unit.
+	Hence $R$ is a field.
+\end{proof}
 
 \subsection{Quotient Rings}
 
@@ -50,7 +60,7 @@ which describes the exact conditions needed for $S$ to be used to form a quotien
 	(r+I)(s+I)=rs+I.
 	\]
 \end{definition}
-The formation of the quotient ring allows us to simplify structures of rings to analyze similarities and differences.
+The formation of the quotient ring allows us to simplify structures of rings to analyze similarities and differences. Each element of the quotient ring represents shifted versions of the given ideal $I$. Once the quotient is formed, all elements of $I$ collapse to 0.
 
 \begin{eg}
 Let $R = \mathbb{R}[x]$.
@@ -67,64 +77,3 @@ The quotient ring
 satisfies the relation $x^2 = -1$ and is isomorphic to $\mathbb{C}$.
 \end{eg}
 
-\begin{theorem}[Canonical Projections]
-	Let $R$ be a ring and $I \unlhd R$ be an ideal. Then define the canonical projection
-	\begin{equation*}
-		\pi:R \to R/I, \quad \pi(r) = r+I
-	\end{equation*}
-	Then 
-	\begin{enumerate}
-		\item $\pi$ is a homomorphism
-		\item $\pi$ is surjective
-		\item $\ker(\pi) = I$
-	\end{enumerate}
-\end{theorem}
-
-\begin{proof}
-	Let $r,s \in R$. 
-	\begin{enumerate}
-		\item Additivity:
-		\begin{equation*}
-			\pi(r+s) = (r+s) + I = (r+I)+(s+I) = \pi(r) + \pi(s)
-		\end{equation*}
-		\item Multiplicativity:
-		\begin{equation*}
-			\pi(rs) = (rs+I) = (r+I)(s+I) = \pi(r)\pi(s)
-		\end{equation*}
-		\item Identity: 
-		\begin{equation*}
-			\pi(1) = 1+I
-		\end{equation*}
-	\end{enumerate}
-	Thus, $\pi$ is a homomorphism. Surjectivity is trivial in how we define the map. Now consider the kernel. By definition
-	\begin{equation*}
-		\ker(\phi) = \set{r \in R: \pi(r) = 0+I} = \set{r \in R: r \in I} = I 
-	\end{equation*}
-\end{proof}
-
-\subsection{Integral Domains}
-
-
-
-
-\begin{corollary}
-	Every ring homomorphism $\phi : K \to R$ from a field $K$ with $\phi \neq 0$ is injective.
-\end{corollary}
-
-\begin{proof}
-	The kernel $\ker(\phi)$ is an ideal of $K$. Since fields have no proper ideals,
-	we must have $\ker(\phi) = \{0\}$, hence $\phi$ is injective.
-\end{proof}
-
-\begin{proposition}
-	A commutative ring $R$ is a field if and only if it has no proper ideals.
-\end{proposition}
-
-\begin{proof}
-	$(\Rightarrow)$ If $R$ is a field, then every nonzero element is a unit.
-	Thus any ideal containing a nonzero element must contain $1$, and hence must equal $R$.
-	
-	$(\Leftarrow)$ If $R$ has no proper ideals and $a \neq 0$, then $(a) = R$.
-	Thus $1 \in (a)$, so there exists $b \in R$ with $ba = 1$, showing that $a$ is a unit.
-	Hence $R$ is a field.
-\end{proof}

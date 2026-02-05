@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.24)  4 FEB 2026 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.24)  4 FEB 2026 23:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1025,6 +1025,35 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthlast=\dimen310
 \titlewidthfirst=\dimen311
 ))
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
+\MT@toks=\toks57
+\MT@tempbox=\box77
+\MT@count=\count363
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks58
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen312
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count364
+
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip146
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
 (c:/texlive/2025/texmf-dist/tex/latex/mlmodern/mlmodern.sty
 Package: mlmodern 2021/01/12 v1.1 Modified Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -1060,7 +1089,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/mlmtt/m/n on input line 43.
 )
-LaTeX Font Info:    Trying to load font information for T1+mlmr on input line 9
+LaTeX Font Info:    Trying to load font information for T1+mlmr on input line 8
 .
 
 (c:/texlive/2025/texmf-dist/tex/latex/mlmodern/t1mlmr.fd
@@ -1068,24 +1097,24 @@ File: t1mlmr.fd 2021/01/11 v1.0 Font defs for mlmodern
 ) (./Ring Theory.aux)
 \openout1 = `"Ring Theory.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1123,17 +1152,17 @@ LaTeX Font Info:    ... okay on input line 9.
 
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
-\scratchdimen=\dimen312
-\scratchbox=\box77
-\nofMPsegments=\count364
-\nofMParguments=\count365
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count366
-\MPscratchDim=\dimen313
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
-\everyMPtoPDFconversion=\toks58
+\scratchcounter=\count365
+\scratchdimen=\dimen313
+\scratchbox=\box78
+\nofMPsegments=\count366
+\nofMParguments=\count367
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count368
+\MPscratchDim=\dimen314
+\MPnumerator=\count369
+\makeMPintoPDFobject=\count370
+\everyMPtoPDFconversion=\toks60
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1147,56 +1176,84 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 9.
+ on input line 8.
 
-Package hyperref Info: Link coloring ON on input line 9.
+Package hyperref Info: Link coloring ON on input line 8.
 (./Ring Theory.out) (./Ring Theory.out)
 \@outlinefile=\write4
 \openout4 = `"Ring Theory.out"'.
 
+LaTeX Info: Redefining \microtypecontext on input line 8.
+Package microtype Info: Applying patch `item' on input line 8.
+Package microtype Info: Applying patch `toc' on input line 8.
+Package microtype Info: Applying patch `eqnum' on input line 8.
+Package microtype Info: Applying patch `footnote' on input line 8.
+Package microtype Info: Applying patch `verbatim' on input line 8.
+LaTeX Info: Redefining \microtypesetup on input line 8.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
 LaTeX Font Info:    Trying to load font information for OT1+mlmr on input line 
-15.
+14.
 
 (c:/texlive/2025/texmf-dist/tex/latex/mlmodern/ot1mlmr.fd
 File: ot1mlmr.fd 2021/01/11 v1.0 Font defs for mlmodern
 )
 LaTeX Font Info:    Trying to load font information for OML+mlmm on input line 
-15.
+14.
 
 (c:/texlive/2025/texmf-dist/tex/latex/mlmodern/omlmlmm.fd
 File: omlmlmm.fd 2021/01/11 v1.0 Font defs for mlmodern
 )
 LaTeX Font Info:    Trying to load font information for OMS+mlmsy on input line
- 15.
+ 14.
 
 (c:/texlive/2025/texmf-dist/tex/latex/mlmodern/omsmlmsy.fd
 File: omsmlmsy.fd 2021/01/11 v1.0 Font defs for mlmodern
 )
 LaTeX Font Info:    Trying to load font information for OMX+mlmex on input line
- 15.
+ 14.
 
 (c:/texlive/2025/texmf-dist/tex/latex/mlmodern/omxmlmex.fd
 File: omxmlmex.fd 2021/01/11 v1.0 Font defs for mlmodern
 )
 LaTeX Font Info:    External font `mlmex10' loaded for size
-(Font)              <14.4> on input line 15.
+(Font)              <14.4> on input line 14.
 LaTeX Font Info:    External font `mlmex10' loaded for size
-(Font)              <10> on input line 15.
+(Font)              <10> on input line 14.
 LaTeX Font Info:    External font `mlmex10' loaded for size
-(Font)              <7> on input line 15.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
+(Font)              <7> on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
 
 
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
 
 
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 15
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
 .
 
 (c:/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1223,6 +1280,9 @@ Package hyperref Info: bookmark level for unknown eg defaults to 0 on input lin
 e 17.
 Package hyperref Info: bookmark level for unknown ceg defaults to 0 on input li
 ne 24.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/mlmr/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1283,12 +1343,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]) (./R4.tex
-pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.22 	L
-       et $R$ be a ring. A subset $I \subseteq R$ is called an \textbf{ideal...
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1297,6 +1351,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22 	L
+       et $R$ be a ring. A subset $I \subseteq R$ is called an \textbf{ideal...
+
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 	A
+        commutative ring $R$ is a field if and only if it has no proper ideals.
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 	L
+       et $R$ be a ring and let $I \unlhd R$ be an ideal. The \textbf{quotie...
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1305,44 +1379,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-pdfTeX warning (ext4): destination with the same identifier (name{definition.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.41 	L
-       et $R$ be a ring and let $I \unlhd R$ be an ideal. The \textbf{quotie...
-
 pdfTeX warning (ext4): destination with the same identifier (name{eg.1}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 L
-      et $R = \mathbb{R}[x]$.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 70.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[10]
-pdfTeX warning (ext4): destination with the same identifier (name{corollary.1})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.111 	E
-        very ring homomorphism $\phi : K \to R$ from a field $K$ with $\phi ...
-
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.120 	A
-         commutative ring $R$ is a field if and only if it has no proper ide...
-) (./R3.tex
+l.66 L
+      et $R = \mathbb{R}[x]$.) (./R3.tex
 pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -1356,20 +1398,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11]
+[10]
 pdfTeX warning (ext4): destination with the same identifier (name{proposition.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.12 	L
        et $\phi : R \to S$ be a ring homomorphism. Then $\ker(\phi)$ is an i...
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 25.
 
-pdfTeX warning (ext4): destination with the same identifier (name{theorem.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.24 \begin{theorem}[Substitution Principle]
-                                            
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11]
+<MAPPINGPROPERTY.png, id=197, 331.7996pt x 352.1958pt>
+File: MAPPINGPROPERTY.png Graphic file (type png)
+<use MAPPINGPROPERTY.png>
+Package pdftex.def Info: MAPPINGPROPERTY.png  used on input line 76.
+(pdftex.def)             Requested size: 99.54065pt x 105.65955pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1385,7 +1436,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]) (./R5.tex
+[13 <c:/Users/Connor/.texlive2024/texmf/tex/latex/my_figures/MAPPINGPROPERTY.pn
+g>]
+pdfTeX warning (ext4): destination with the same identifier (name{corollary.1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.118 \begin{corollary}[First Isomorphism Theorem]
+                                                  
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1394,12 +1452,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14]
-<MAPPINGPROPERTY.png, id=203, 331.7996pt x 352.1958pt>
-File: MAPPINGPROPERTY.png Graphic file (type png)
-<use MAPPINGPROPERTY.png>
-Package pdftex.def Info: MAPPINGPROPERTY.png  used on input line 18.
-(pdftex.def)             Requested size: 99.54065pt x 105.65955pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1407,14 +1459,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15 <c:/Users/Connor/.texlive2024/texmf/tex/latex/my_figures/MAPPINGPROPERTY.pn
-g>]
-pdfTeX warning (ext4): destination with the same identifier (name{corollary.1})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.60 \begin{corollary}[First Isomorphism Theorem]
-                                                 
+[15]) (./R5.tex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1422,38 +1467,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[17])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[18] (./Ring Theory.aux)
+[16] (./Ring Theory.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
-Package rerunfilecheck Info: File `"Ring Theory".out' has not changed.
-(rerunfilecheck)             Checksum: 98ACC65CD186842EAA2673DE9D8ACEC4;1610.
+
+
+Package rerunfilecheck Warning: File `"Ring Theory".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Ring Theory".out':
+(rerunfilecheck)             Before: 1A9C33D0B942372CEF17826DA64BC845;2018
+(rerunfilecheck)             After:  768C1CF0356AD9B66AB31F3A36949BF1;1978.
  ) 
 Here is how much of TeX's memory you used:
- 38145 strings out of 467538
- 873829 string characters out of 5423724
- 1382259 words of memory out of 5000000
- 66239 multiletter control sequences out of 15000+600000
- 693671 words of font info for 108 fonts, out of 8000000 for 9000
+ 40274 strings out of 467538
+ 911452 string characters out of 5423724
+ 1448676 words of memory out of 5000000
+ 68181 multiletter control sequences out of 15000+600000
+ 701098 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,12n,122p,731b,728s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,12n,122p,1010b,739s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/mlmodern/mlmbx12.pfb><c:/texli
 ve/2025/texmf-dist/fonts/type1/public/mlmodern/mlmcsc10.pfb><c:/texlive/2025/te
 xmf-dist/fonts/type1/public/mlmodern/mlmex10.pfb><c:/texlive/2025/texmf-dist/fo
@@ -1466,10 +1502,10 @@ b><c:/texlive/2025/texmf-dist/fonts/type1/public/mlmodern/mlmr8.pfb><c:/texlive
 /type1/public/mlmodern/mlmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/publi
 c/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on "Ring Theory.pdf" (18 pages, 300599 bytes).
+Output written on "Ring Theory.pdf" (16 pages, 299341 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
- 104 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 38018 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -38,6 +38,13 @@ This definition naturally brings fields into question. The biggest distinction b
 	0 = a\cdot 0.
 	\]
 \end{proof}
+Note though that there do exist scenarios where elements of $R$ may produce 0 when multiplied by a non zero element.
+\begin{definition}
+	An element $a \in R$ is a \textbf{zero divisor} if there exists some non-zero element $b\in R$ such that $ab=0$.
+\end{definition}
+
+
+\subsection{Subrings}
 \begin{definition}
 	Let $(R,+,\cdot)$ be a ring. A subset $S \subseteq R$ is called a \textbf{subring} of $R$ if
 	\begin{enumerate}[label=\roman*)]
@@ -46,8 +53,6 @@ This definition naturally brings fields into question. The biggest distinction b
 	\end{enumerate}
 \end{definition}
 In a sense, we can think of the subring as having an analog definition from subgroups. That is, they are simply subsets of the larger ring $R$ that is it itself a complete ring.
-
-\subsection{Subrings}
 \begin{proposition}[Subring Test]
 	If $1 \in S$ and $S$ is closed under subtraction and multiplication, then $S$ is a subring of $R$
 \end{proposition}

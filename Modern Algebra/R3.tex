@@ -18,80 +18,174 @@ Notice that, by this definition, we're specifically examining the homomorphism o
 	\end{equation*}
 	so $ar,ra \in \ker(\phi)$. Since $\ker(\phi)$ is a subring, it must be true that $\ker(\phi)$ is closed under addition. Thus, $\ker(\phi)$ is an ideal.
 \end{proof}
+Naturally with this in mind, if we prove that $\phi$ is also a surjection, then we have a \textit{ring isomorphism}.
 
-
-
-\begin{theorem}[Substitution Principle]
-	If $R$ is a ring and $r \in R$, then there exists a ring homomorphism
+\subsection{The Canonical Projection}
+\begin{theorem}
+	Let $R$ be a ring and $I \unlhd R$ be an ideal. Then define the canonical projection
 	\begin{equation*}
-		\phi:R[x] \to R, \quad f(x)\mt f(r)
+		\pi:R \to R/I, \quad \pi(r) = r+I
 	\end{equation*}
-	who's kernel is $(p(x))$, where $p(x)$ is the minimal polynomial satisfied by $r$.
+	Then 
+	\begin{enumerate}[label=(\roman*)]
+		\item $\pi$ is a homomorphism
+		\item $\pi$ is surjective
+		\item $\ker(\pi) = I$
+	\end{enumerate}
+\end{theorem}
+The canonical projection is what allows us to go from the ring $R$ to the quotient ring $R/I$. Notice though that this map is not injective, as certain elements may exist within the same equivalence class.
+
+\begin{proof}
+	Let $r,s \in R$. 
+	\begin{enumerate}
+		\item Additivity:
+		\begin{equation*}
+			\pi(r+s) = (r+s) + I = (r+I)+(s+I) = \pi(r) + \pi(s)
+		\end{equation*}
+		\item Multiplicativity:
+		\begin{equation*}
+			\pi(rs) = (rs+I) = (r+I)(s+I) = \pi(r)\pi(s)
+		\end{equation*}
+		\item Identity: 
+		\begin{equation*}
+			\pi(1) = 1+I
+		\end{equation*}
+	\end{enumerate}
+	Thus, $\pi$ is a homomorphism. Surjectivity is trivial in how we define the map. Now consider the kernel. By definition
+	\begin{equation*}
+		\ker(\phi) = \set{r \in R: \pi(r) = 0+I} = \set{r \in R: r \in I} = I 
+	\end{equation*}
+\end{proof}
+
+\subsection{Isomorphism Theorems}
+\begin{theorem}[Mapping Property]
+	Let $R,S$ be rings and let 
+	\begin{equation*}
+		\phi: R\to S
+	\end{equation*}
+	be a ring homomorphism. If $I \subseteq \ker(\phi)$, then there exists a unique ring homomorphism
+	\begin{equation*}
+		\overline{\phi}: R/I \to S
+	\end{equation*}
+	such that $\phi = \overline{\phi} \circ \pi $ where $\pi: R \to R/I$ is the canonical projection map. 
+\end{theorem}
+
+Not every homomorphism sends elements of an ideal to $0$. The mapping property requires $I \subseteq \ker\phi$; only then does the quotient $R/I$ allow a well-defined factorization. Otherwise, cosets could map ambiguously.
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=.3]{MAPPINGPROPERTY}
+		\caption{Diagram of the mapping property in action}
+	\end{center}
+\end{figure}
+\begin{proof}
+	First, define the map 
+	\begin{equation*}
+		\overline{\phi} (r+I) = \phi(r)
+	\end{equation*}
+	Now suppose $r+I=r'+I$. Then 
+	\begin{equation*}
+		r-r' \in I \subseteq \ker(\phi)
+	\end{equation*}
+	so 
+	\begin{equation*}
+		\phi(r-r') = 0 \imp \phi(r)=\phi(r')
+	\end{equation*}
+	Hence, $\overline{\phi}$ is well defined. Now, let us confirm that the map is in fact a homomorphism. Let $r,s \in R$.
+	\begin{enumerate}
+		\item Additivity:
+		\begin{equation*}
+			\overline{\phi}((r+I)+(s+I)) = \overline{\phi}(r+s+I) = \phi(r+s) = \phi(r) + \phi(s) = \overline{\phi}(r+I)+\overline{\phi}(s+I)
+		\end{equation*}
+		\item Multiplicity: 
+		\begin{equation*}
+			\overline{\phi}((r+I)(s+I)) = \overline{\phi}(rs+I) = \phi(r)\phi(s) = \overline{\phi}(r+I)\overline{\phi}(s+I)
+		\end{equation*}
+		\item Identity:
+		\begin{equation*}
+			\overline{\phi}(1+I) = \phi(1) = 1
+		\end{equation*}
+	\end{enumerate}
+	Thus, $\overline{\phi}$ is a ring homomorphism. So notice then that 
+	\begin{equation*}
+		(\overline{\phi}\circ \pi)(r) = \overline{\phi}(r+I) = \phi(r)
+	\end{equation*}
+	so $\phi = \overline{\phi}\circ \pi$. Now, suppose $\psi:R/I \to S$ is any ring homomorphism with $\phi = \psi \circ \pi$. Then for any $r+I \in R/I$,
+	\begin{equation*}
+		\psi(r+I) = \psi(\pi(r)) = \phi(r) = \overline{\phi}(r+I)
+	\end{equation*}
+	Thus, $\psi = \overline{\phi}$, proving uniqueness.
+\end{proof}
+\begin{corollary}[First Isomorphism Theorem]
+	Let $\phi: R\to S$ be a ring homomorphism. Then 
+	\begin{equation*}
+		R/\ker(\phi) \cong \text{im}\phi
+	\end{equation*}
+\end{corollary}
+The use of the kernel as the ideal to quotient by is key for inducing injectivity, as all elements that map to 0 are collapsed to a singular representation.
+
+\begin{theorem}[Second Isomorphism Theorem]
+	Let $R$ be a ring, let $S\subseteq R$ be a subring, and let $I \unlhd R$ be an ideal. Then
+	\begin{enumerate}[label=(\roman*)]
+		\item $S\cap I \unlhd S$
+		\item $S+I = \set{s+i: s \in S, i \in I}$ is a subring of $R$
+		\item There is a natural ring isomorphism
+		\begin{equation*}
+			(S+I)/I \cong S/(S\cap I)
+		\end{equation*}
+	\end{enumerate}
+\end{theorem}
+
+\begin{theorem}[Third Isomorphism Theorem]
+	Let $R$ be a ring and $I,K \unlhd R$ be ideals. Then
+	\begin{equation*}
+		(R/K)/(I/K) \cong R/I
+	\end{equation*}
+\end{theorem}
+
+\subsection{Correspondence Theorem}
+\begin{theorem}
+	Let $R$ be a ring and let $I \unlhd R$ be an ideal. Then there is a one to one correspondence between
+	\begin{enumerate}
+		\item Ideals of $R$ containing $I$
+		\item Ideals of the quotient ring $R/I$
+	\end{enumerate}
+	The correspondence is given by 
+	\begin{equation*}
+		J \mt J/I = \set{j+I: j \in J}, \quad \overline{J} \mt \pi^{-1}(\overline{J}) = \set{r \in R: r+I \in J}
+	\end{equation*}
 \end{theorem}
 \begin{proof}
-	Every polynomial $f(x) \in R[x]$ can be written uniquely as
+	Let $R$ be a ring and $I \unlhd R$ be an ideal. Then let $J$ be an ideal of $R$ such that $I \subseteq J$. Define a map
+	\begin{equation*}
+		\psi(r) = r+I
+	\end{equation*}
+	Return to $J$. Under the map $\psi$, we have that $J$ becomes
+	\begin{equation*}
+		J/I = \set{j+I: j \in J}
+	\end{equation*}
+	We'll now show that this resulting set is an ideal of $R/I$. Let $r+I \in R/I$ and $j+I \in J$. Then we have that
+	\begin{equation*}
+		(r+I)(j+I) = (rj+I)
+	\end{equation*}
+	Because $J$ was an ideal, we have that $rj \in J$. Thus, it must be true that $rj+I \in J/I$. Therfore, $J/I$ is absorbs via multiplication. Next, let $j_1+I,j_2+I \in J/I$. Then
+	\begin{equation*}
+		j_1+I+j_2+I = (j_1+j_2)+I
+	\end{equation*}
+	Since $J$ is an ideal, $j_1+j_2 \in J$. Thus, $J/I$ is closed under addition. Therfore, $J/I$ is an ideal.
+	Thus, $J/I$ is an ideal. Conversely, if $K \unlhd R/I$, then the preimage
 	\[
-	f(x) = \sum_{i=0}^n a_i x^i
-	\quad \text{with } a_i \in R.
+	\pi^{-1}(K) = \{ r \in R : r+I \in K \}
 	\]
-	Define a map $\Phi : R[x] \to R'$ by
+	is an ideal of $R$ containing $I$. Moreover, these assignments are
+	inverse to each other:
 	\[
-	\Phi(f) := \sum_{i=0}^n \phi(a_i)\alpha^i.
+	\pi^{-1}(J/I) = J \quad \text{and} \quad \pi(\pi^{-1}(K)) = K.
 	\]
-	
-	This map is well-defined since $\phi(a_i) \in R'$ and $\alpha^i \in R'$, and $R'$ is closed under addition and multiplication. For any $r \in R$ (viewed as a constant polynomial),
+	Hence there is a bijection between ideals of $R$ containing $I$ and
+	ideals of $R/I$, given by
 	\[
-	\Phi(r) = \phi(r),
+	J \longleftrightarrow J/I.
 	\]
-	so $\Phi|_R = \phi$. Moreover,
-	\[
-	\Phi(x) = \phi(1)\alpha = \alpha.
-	\]
-	
-	Now let
-	\[
-	f(x)=\sum a_i x^i, \quad g(x)=\sum b_i x^i.
-	\]
-	
-	\emph{Additivity:}
-	\[
-	\begin{aligned}
-		\Phi(f+g)
-		&= \Phi\!\left(\sum (a_i+b_i)x^i\right) \\
-		&= \sum \phi(a_i+b_i)\alpha^i \\
-		&= \sum (\phi(a_i)+\phi(b_i))\alpha^i \\
-		&= \Phi(f)+\Phi(g).
-	\end{aligned}
-	\]
-	
-	\emph{Multiplicativity:}
-	\[
-	\begin{aligned}
-		\Phi(fg)
-		&= \Phi\!\left(\sum_k \left(\sum_{i+j=k} a_i b_j\right)x^k\right) \\
-		&= \sum_k \phi\!\left(\sum_{i+j=k} a_i b_j\right)\alpha^k \\
-		&= \sum_k \sum_{i+j=k} \phi(a_i)\phi(b_j)\alpha^{i+j} \\
-		&= \left(\sum_i \phi(a_i)\alpha^i\right)
-		\left(\sum_j \phi(b_j)\alpha^j\right) \\
-		&= \Phi(f)\Phi(g).
-	\end{aligned}
-	\]
-	
-	Thus $\Phi$ is a ring homomorphism. Finally, suppose $\Psi : R[x] \to R'$ is another ring homomorphism such that
-	$\Psi|_R = \phi$ and $\Psi(x)=\alpha$. Then for any
-	$f(x)=\sum a_i x^i$,
-	\[
-	\Psi(f)=\sum \Psi(a_i)\Psi(x)^i
-	=\sum \phi(a_i)\alpha^i
-	=\Phi(f),
-	\]
-	so $\Psi=\Phi$. Hence $\Phi$ is unique.
 \end{proof}
-The substitution principle emphasizes the idea that evaluations of polynomials via \textit{substitution} of $x$ with a value $\alpha$ is not random. Every substitution that respects the ring rules is a ring homormophism and in fact, there is exactly one homomorphism for each choice of coefficient map and variable. Now, let $R'=R$, $\phi=\mathrm{id}_R$, and $\alpha=a\in R$ in the Substitution Principle. The resulting homomorphism
-\[
-\Phi : R[x] \to R
-\]
-satisfying $\Phi|_R=\mathrm{id}_R$ and $\Phi(x)=a$ is exactly the \emph{evaluation map}
-\[
-\operatorname{ev}_a(f)=f(a).
-\]
+
+\subsection{The Evaluation Map}
