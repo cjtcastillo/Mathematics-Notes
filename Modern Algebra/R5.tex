@@ -1,38 +1,5 @@
 \subsection{Isomorphism Theorems}
-\begin{theorem}[Canonical Projections]
-	Let $R$ be a ring and $I \unlhd R$ be an ideal. Then define the canonical projection
-	\begin{equation*}
-		\pi:R \to R/I, \quad \pi(r) = r+I
-	\end{equation*}
-	Then 
-	\begin{enumerate}
-		\item $\pi$ is a homomorphism
-		\item $\pi$ is surjective
-		\item $\ker(\pi) = I$
-	\end{enumerate}
-\end{theorem}
 
-\begin{proof}
-	Let $r,s \in R$. 
-	\begin{enumerate}
-		\item Additivity:
-		\begin{equation*}
-			\pi(r+s) = (r+s) + I = (r+I)+(s+I) = \pi(r) + \pi(s)
-		\end{equation*}
-		\item Multiplicativity:
-		\begin{equation*}
-			\pi(rs) = (rs+I) = (r+I)(s+I) = \pi(r)\pi(s)
-		\end{equation*}
-		\item Identity: 
-		\begin{equation*}
-			\pi(1) = 1+I
-		\end{equation*}
-	\end{enumerate}
-	Thus, $\pi$ is a homomorphism. Surjectivity is trivial in how we define the map. Now consider the kernel. By definition
-	\begin{equation*}
-		\ker(\phi) = \set{r \in R: \pi(r) = 0+I} = \set{r \in R: r \in I} = I 
-	\end{equation*}
-\end{proof}
 \begin{theorem}[Mapping Property]
 	Let $R,S$ be rings and let 
 	\begin{equation*}

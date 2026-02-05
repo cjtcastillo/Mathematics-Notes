@@ -1,4 +1,4 @@
-\subsection{Maps of Rings}
+\subsection{Ring Homomorphisms}
 \begin{definition}
 	Given two rings $R,S,$ a function $\phi: R \to S$ is a ring homomorphism if
 	\begin{enumerate}[label=\roman*)]
@@ -7,13 +7,20 @@
 		\item $\phi(1_R) = 1_{S}$
 	\end{enumerate}
 \end{definition}
-Note that by this definition we examine the ring on both operations. The definition of the kernel remains invariant under this definition.
-\begin{eg}
-	Let $R' \subseteq R$ be a subring. The inclusion map $i: R' \to R$ defined by $i(r') = r'$.
-\end{eg}
-\begin{eg}
-	The automorphism of conjugation on the gaussian integers defined by $a+bi \mt a-bi$.
-\end{eg}
+Notice that, by this definition, we're specifically examining the homomorphism on both operations. The definition of the kernel and image remains invariant under this definition. Furthermore, the property relating to injectivity by way of the kernel criterion remains the same as well.
+\begin{proposition}
+	Let $\phi : R \to S$ be a ring homomorphism. Then $\ker(\phi)$ is an ideal of $R$.
+\end{proposition}
+\begin{proof}
+	Let $a \in \ker(\phi)$ and $r \in R$. Then 
+	\begin{equation*}
+		\phi(ar) = \phi(a)\phi(r) = 0\phi(r) = 0, \quad \phi(ra) = \phi(r)\phi(a) = \phi(r)0 = 0
+	\end{equation*}
+	so $ar,ra \in \ker(\phi)$. Since $\ker(\phi)$ is a subring, it must be true that $\ker(\phi)$ is closed under addition. Thus, $\ker(\phi)$ is an ideal.
+\end{proof}
+
+
+
 \begin{theorem}[Substitution Principle]
 	If $R$ is a ring and $r \in R$, then there exists a ring homomorphism
 	\begin{equation*}

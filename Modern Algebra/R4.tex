@@ -1,4 +1,4 @@
-\subsection{Ideals and Quotient Rings}
+\subsection{Ideals}
 Previously, in group theory, we used normal subgroups to construct quotient groups. We now seek to develop analogous conditions for subrings to construct quotient rings. Recall that we may partition a ring through individual cosets that are \textit{equivalence classes} of the form
 \begin{equation*}
 	r+S = \set{r+s : s \in S}
@@ -35,6 +35,8 @@ which describes the exact conditions needed for $S$ to be used to form a quotien
 
 \newpage
 
+\subsection{Quotient Rings}
+
 \begin{definition}
 	Let $R$ be a ring and let $I \unlhd R$ be an ideal. The \textbf{quotient ring}
 	(or \textbf{factor ring}) $R/I$ is the set
@@ -65,18 +67,45 @@ The quotient ring
 satisfies the relation $x^2 = -1$ and is isomorphic to $\mathbb{C}$.
 \end{eg}
 
-
-\begin{proposition}
-	Let $\phi : R \to S$ be a ring homomorphism. Then $\ker(\phi)$ is an ideal of $R$.
-\end{proposition}
+\begin{theorem}[Canonical Projections]
+	Let $R$ be a ring and $I \unlhd R$ be an ideal. Then define the canonical projection
+	\begin{equation*}
+		\pi:R \to R/I, \quad \pi(r) = r+I
+	\end{equation*}
+	Then 
+	\begin{enumerate}
+		\item $\pi$ is a homomorphism
+		\item $\pi$ is surjective
+		\item $\ker(\pi) = I$
+	\end{enumerate}
+\end{theorem}
 
 \begin{proof}
-	Let $a \in \ker(\phi)$ and $r \in R$. Then 
+	Let $r,s \in R$. 
+	\begin{enumerate}
+		\item Additivity:
+		\begin{equation*}
+			\pi(r+s) = (r+s) + I = (r+I)+(s+I) = \pi(r) + \pi(s)
+		\end{equation*}
+		\item Multiplicativity:
+		\begin{equation*}
+			\pi(rs) = (rs+I) = (r+I)(s+I) = \pi(r)\pi(s)
+		\end{equation*}
+		\item Identity: 
+		\begin{equation*}
+			\pi(1) = 1+I
+		\end{equation*}
+	\end{enumerate}
+	Thus, $\pi$ is a homomorphism. Surjectivity is trivial in how we define the map. Now consider the kernel. By definition
 	\begin{equation*}
-		\phi(ar) = \phi(a)\phi(r) = 0\phi(r) = 0, \quad \phi(ra) = \phi(r)\phi(a) = \phi(r)0 = 0
+		\ker(\phi) = \set{r \in R: \pi(r) = 0+I} = \set{r \in R: r \in I} = I 
 	\end{equation*}
-	so $ar,ra \in \ker(\phi)$. Since $\ker(\phi)$ is a subring, it must be true that $\ker(\phi)$ is closed under addition. Thus, $\ker(\phi)$ is an ideal.
 \end{proof}
+
+\subsection{Integral Domains}
+
+
+
 
 \begin{corollary}
 	Every ring homomorphism $\phi : K \to R$ from a field $K$ with $\phi \neq 0$ is injective.
@@ -99,9 +128,3 @@ satisfies the relation $x^2 = -1$ and is isomorphic to $\mathbb{C}$.
 	Thus $1 \in (a)$, so there exists $b \in R$ with $ba = 1$, showing that $a$ is a unit.
 	Hence $R$ is a field.
 \end{proof}
-
-Since every ideal is an additive subgroup of $R$, we may form the quotient group $R/I$.
-Its elements are cosets of the form
-\[
-a + I = \{ a + i : i \in I \}.
-\]

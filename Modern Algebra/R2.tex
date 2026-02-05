@@ -7,9 +7,12 @@
 	where $n$ is the \textbf{degree} of the polynomial
 \end{definition}
 	Since the monomials $x^k$ are linearly independent variables, two polynomials are equivalent if and only if their coefficients are the same. Fundamentally, the structure of the polynomial ring isn't determined reliant on the variable $x$ whatsoever. The elements of $R[x]$ are really just sequences of coefficients from $R$.
+\begin{remark}
+	Note that when we say $R$ is a subring, we're specifically saying that $R$ is embedded into the polynomial ring as constant polynomials. Their sequence representation is just
 	\begin{equation*}
-		a_0+a_1x+a_2x^2+\cdots+a_nx^n \to (a_0,a_1,a_2,a_3,...,a_n)
+		a \in R \to (a,0,0,0,...)
 	\end{equation*}
+\end{remark}
 \begin{proposition}
 	There is a unique commutative ring structure on the set of polynomials $R[x]$ having these properties:
 	\begin{enumerate}[label=\roman*)]
@@ -18,12 +21,7 @@
 		\item $R$ becomes a subring of $R[x]$, when the elements $R$ are identified with constant polynomials.
 	\end{enumerate}
 \end{proposition}
-\begin{remark}
-	Note that when we say $R$ is a subring, we're specifically saying that $R$ is embedded into the polynomial ring as constant polynomials. Their sequence representation is just
-	\begin{equation*}
-		a \in R \to (a,0,0,0,...)
-	\end{equation*}
-\end{remark}
+
 \begin{proof}
 	We first show that $R[x]$ is a ring under polynomial addition and multiplication.Let
 	\[
@@ -105,20 +103,4 @@
 	- Quotient: $q(x) = 2x + 1$, Remainder: $r(x) = 0$.  
 	
 \end{eg}
-\begin{ceg}
-	Consider the polynomials
-	\[
-	f(x) = 2x^2 + 3x + 1 \quad \text{and} \quad g(x) = 4x + 1
-	\]
-	over $\mathbb{Z}[x]$.  
-	
-	- The leading coefficient of $g(x)$ is $4$, which is \emph{not} a unit in $\mathbb{Z}$.  
-	- Attempting to divide the leading term:
-	
-	\[
-	\frac{2x^2}{4x} = \frac{1}{2} x \notin \mathbb{Z}[x]
-	\]
-	
-	- We cannot produce integer coefficients for the quotient.  
-	
-\end{ceg}
+
