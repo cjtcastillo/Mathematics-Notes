@@ -1,0 +1,124 @@
+\subsection{Polynomial Rings R[x]} 
+\begin{definition}
+	Let $R$ be a commutative ring with $1\in R$. The \textbf{polynomial ring} over $R$ in the \textbf{indeterminate} $x$, denoted $R[x]$, is the set
+	\begin{equation*}
+		R[x] = \set{a_0+a_1x+a_2x^2+\cdots+a_nx^n: n \in \bbZ_{\ge 0},a_i \in R}
+	\end{equation*}
+	where $n$ is the \textbf{degree} of the polynomial
+\end{definition}
+	Since the monomials $x^k$ are linearly independent variables, two polynomials are equivalent if and only if their coefficients are the same. Fundamentally, the structure of the polynomial ring isn't determined reliant on the variable $x$ whatsoever. The elements of $R[x]$ are really just sequences of coefficients from $R$.
+	\begin{equation*}
+		a_0+a_1x+a_2x^2+\cdots+a_nx^n \to (a_0,a_1,a_2,a_3,...,a_n)
+	\end{equation*}
+\begin{proposition}
+	There is a unique commutative ring structure on the set of polynomials $R[x]$ having these properties:
+	\begin{enumerate}[label=\roman*)]
+		\item Addition of polynommials is defined
+		\item Multiplication of polynomials is defined
+		\item $R$ becomes a subring of $R[x]$, when the elements $R$ are identified with constant polynomials.
+	\end{enumerate}
+\end{proposition}
+\begin{remark}
+	Note that when we say $R$ is a subring, we're specifically saying that $R$ is embedded into the polynomial ring as constant polynomials. Their sequence representation is just
+	\begin{equation*}
+		a \in R \to (a,0,0,0,...)
+	\end{equation*}
+\end{remark}
+\begin{proof}
+	We first show that $R[x]$ is a ring under polynomial addition and multiplication.Let
+	\[
+	f(x) = \sum_{i=0}^n a_i x^i
+	\quad \text{and} \quad
+	g(x) = \sum_{j=0}^m b_j x^j
+	\]
+	be polynomials in $R[x]$.
+	
+	\textit{Closure under addition}: Define
+	\[
+	(f+g)(x) = \sum_{k=0}^{\max\{n,m\}} (a_k + b_k)x^k,
+	\]
+	where missing coefficients are taken to be zero. Since $a_k + b_k \in R$, we have $f+g \in R[x]$.
+	
+	\textit{Closure under multiplication}: Define
+	\[
+	(fg)(x) = \sum_{k=0}^{n+m}
+	\left(\sum_{i+j=k} a_i b_j\right)x^k.
+	\]
+	Each coefficient $\sum_{i+j=k} a_i b_j$ lies in $R$, so $fg \in R[x]$. Addition and multiplication are associative and distributive because these properties hold in $R$, and the zero and unit elements are the constant polynomials $0$ and $1$, respectively. Hence $R[x]$ is a ring. Finally, identify each real number $a \in R$ with the constant polynomial $a$. Under this identification, addition and multiplication in $R$ agree with those in $R[x]$, so $R$ is a subring of $R[x]$.
+\end{proof}
+\begin{proposition}[Division Algorithm]
+	Given polynomials $f(x)$ and $g(x)$ with $f$ being monic, we can find unique polynomials $q(x)$ and $r(x)$ with $\deg(r)<\deg(f)$ such that 
+	\begin{equation*}
+		g(x)=f(x)q(x)+r(x)
+	\end{equation*}
+\end{proposition}
+\begin{remark}
+	We adopt the convention $\deg(0) = -\infty$.  
+	This choice preserves standard degree identities, such as
+	\[
+	\deg(f \cdot 0) = \deg(f) + \deg(0),
+	\]
+	which would otherwise fail.  
+	With this convention, the degree condition $\deg(r) < \deg(f)$ in the Division Algorithm remains meaningful even when the remainder $r = 0$, allowing the proof of uniqueness to proceed without a separate case.
+\end{remark}
+\begin{proof}
+	Subtracting the two expressions for $g(x)$ gives
+	\[
+	0 = f(x)\big(q(x) - q'(x)\big) + \big(r(x) - r'(x)\big).
+	\]
+	Rearranging,
+	\[
+	f(x)\big(q(x) - q'(x)\big) = r'(x) - r(x).
+	\]
+	
+	If $q(x) - q'(x) \neq 0$, then the left-hand side is a nonzero multiple of $f(x)$ and hence has degree at least $\deg(f)$.  
+	However, since $\deg(r), \deg(r') < \deg(f)$, the right-hand side satisfies
+	\[
+	\deg\!\big(r'(x) - r(x)\big) < \deg(f).
+	\]
+	
+	This is impossible unless
+	\[
+	q(x) - q'(x) = 0.
+	\]
+	Thus $q(x) = q'(x)$, and substituting back yields $r(x) = r'(x)$.
+\end{proof}
+\begin{corollary}
+	Division with a remainder can be done whenever the leading coefficient of $f$ is a unit. In particular, it can be done whenever the coefficient ring is a field and $f \neq 0$.
+\end{corollary}
+\begin{eg}
+	Consider the polynomials
+	\[
+	f(x) = 2x^2 + 3x + 1 \quad \text{and} \quad g(x) = x + 1
+	\]
+	over $\mathbb{Z}[x]$.  
+	
+	- The leading coefficient of $g(x)$ is $1$, which is a unit in $\mathbb{Z}$.  
+	- Perform polynomial division:
+	
+	\[
+	\begin{aligned}
+		2x^2 + 3x + 1 &= (x+1)(2x + 1) + 0
+	\end{aligned}
+	\]
+	
+	- Quotient: $q(x) = 2x + 1$, Remainder: $r(x) = 0$.  
+	
+\end{eg}
+\begin{ceg}
+	Consider the polynomials
+	\[
+	f(x) = 2x^2 + 3x + 1 \quad \text{and} \quad g(x) = 4x + 1
+	\]
+	over $\mathbb{Z}[x]$.  
+	
+	- The leading coefficient of $g(x)$ is $4$, which is \emph{not} a unit in $\mathbb{Z}$.  
+	- Attempting to divide the leading term:
+	
+	\[
+	\frac{2x^2}{4x} = \frac{1}{2} x \notin \mathbb{Z}[x]
+	\]
+	
+	- We cannot produce integer coefficients for the quotient.  
+	
+\end{ceg}

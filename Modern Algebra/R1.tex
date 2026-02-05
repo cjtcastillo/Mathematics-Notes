@@ -1,0 +1,104 @@
+	\subsection{Definition and First Examples}
+\begin{definition}
+	A \textbf{ring} $(R,+,\cdot)$ is a set equipped with two binary operations such that
+	\begin{enumerate}[label=\roman*)]
+		\item $(R,+)$ is an abelian group,
+		\item Multiplication is associative, i.e.\ $(ab)c = a(bc)$ for all $a,b,c \in R$,
+		\item Multiplication distributes over addition from the left and right
+		\item Multiplicative and Additive Identity contained in $R$
+	\end{enumerate}
+	If multiplication is commutative, we say that $R$ is a \textbf{commutative ring}.
+\end{definition}
+This definition naturally brings fields into question. The biggest distinction between a field and a ring is that a field is always a commutative ring, and can be thought of us two groups with distribution. By definition, we didn't specify that the multiplication operation forms a group. This is because not all elements of the ring have multiplicative inverses.
+\begin{definition}
+	Any element $a \in R$ with a multiplicative inverse $a^{-1}$ is a \textbf{unit}.
+\end{definition}
+\begin{eg}
+	Consider the set of integers $\bbZ$. By definition, this is a ring. However, notice that the only units of this ring are 1 and -1. An example is
+	\begin{equation*}
+		2 \cdot x = 1
+	\end{equation*}
+	has no solutions in $\bbZ$.
+\end{eg}
+\begin{ceg}
+	Now consider $2\bbZ$, the set of all event integers. This fails to satisfy the properties of a ring, as it does not contain the multiplicative identity.In the case that an identity like this is not contained within the set, we have a side classification known as a \textbf{rng}, pronounced "rung."
+\end{ceg}
+\newpage
+
+\begin{proposition}[Absorbing Property of Zero]
+	For any $a\in R$ we have that $0\cdot a = a \cdot 0 = 0$.
+\end{proposition}
+\begin{proof}
+	Let $a \in R$. Since $0 = 0 + 0$, distributivity gives
+	\[
+	a \cdot 0 = a(0+0) = a\cdot 0 + a\cdot 0.
+	\]
+	Adding the additive inverse of $a\cdot 0$ to both sides yields
+	\[
+	0 = a\cdot 0.
+	\]
+\end{proof}
+\begin{definition}
+	Let $(R,+,\cdot)$ be a ring. A subset $S \subseteq R$ is called a \textbf{subring} of $R$ if
+	\begin{enumerate}[label=\roman*)]
+		\item $S$ is closed under addition and multiplication,
+		\item $(S,+)$ is a subgroup of $(R,+)$.
+	\end{enumerate}
+\end{definition}
+In a sense, we can think of the subring as having an analog definition from subgroups. That is, they are simply subsets of the larger ring $R$ that is it itself a complete ring.
+\begin{proposition}[Subring Test]
+	If $1 \in S$ and $S$ is closed under subtraction and multiplication, then $S$ is a subring of $R$
+\end{proposition}
+\begin{proof}
+	Assume $1\in S$ and $S$ is closed under subtraction and multiplication. Then we must have that $1-1 = 0$. Thus, $0 \in S$. To produce additive inverses, we simply subtract an element $a \in S$ from $0$. Then finally, we can express addition in $S$ for two elements $a,b\in S$ as 
+	\begin{equation*}
+		a+b = a-(-b) \in S
+	\end{equation*} 
+	Since commutativity and associativity are inherited from $R$, this shows that $S$ is a subring.
+\end{proof}
+\begin{eg}
+	Show that the set of Gaussian integers
+	\[
+	\bbZ[i] = \{a+bi : a,b \in \bbZ\}
+	\]
+	is a subring of $\bbC$. Observe that
+	\[
+	0 = 0 + 0i \in \bbZ[i] \quad \text{and} \quad 1 = 1 + 0i \in \bbZ[i].
+	\]
+	
+	Let $a+bi, c+di \in \bbZ[i]$.
+	
+	First, we'll show closure under subtraction:
+	\[
+	(a+bi)-(c+di) = (a-c) + (b-d)i \in \bbZ[i].
+	\]
+	
+	Now we'll show closure under multiplication:
+	\[
+	(a+bi)(c+di) = (ac-bd) + (ad+bc)i \in \bbZ[i],
+	\]
+	since $ac-bd, ad+bc \in \bbZ$. By the subring test, $\bbZ[i]$ is a subring of $\bbC$.
+\end{eg}
+\begin{eg}
+	Show that The set of rational numbers $\frac{a}{b}$, where $b$ is not divisible by $3$ when written in reduced form, is a subring of $\bbQ$.
+	
+	\medskip
+	
+	Define
+	\[
+	S = \left\{ \frac{a}{b} : a \in \bbZ,\ b \in \bbZ \setminus 3\bbZ \right\}.
+	\]
+	First, note that
+	\[
+	1 = \frac{1}{1} \in S,
+	\]
+	since $1$ is not divisible by $3$. Let $\frac{a}{b}, \frac{c}{d} \in S$, where $b$ and $d$ are not divisible by $3$.
+	\[
+	\frac{a}{b} - \frac{c}{d} = \frac{ad - bc}{bd}.
+	\]
+	Since $b$ and $d$ are not divisible by $3$, their product $bd$ is also not divisible by $3$. Thus $\frac{ad-bc}{bd} \in S$.
+	\[
+	\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}.
+	\]
+	Again, $bd$ is not divisible by $3$, so $\frac{ac}{bd} \in S$. By the subring test, $S$ is a subring of $\bbQ$.
+\end{eg}

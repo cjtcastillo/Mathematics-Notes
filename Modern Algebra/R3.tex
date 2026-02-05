@@ -1,0 +1,90 @@
+\subsection{Maps of Rings}
+\begin{definition}
+	Given two rings $R,S,$ a function $\phi: R \to S$ is a ring homomorphism if
+	\begin{enumerate}[label=\roman*)]
+		\item $\phi(a+b) = \phi(a) + \phi(b)$ 
+		\item $\phi(ab) = \phi(a)\phi(b)$
+		\item $\phi(1_R) = 1_{S}$
+	\end{enumerate}
+\end{definition}
+Note that by this definition we examine the ring on both operations. The definition of the kernel remains invariant under this definition.
+\begin{eg}
+	Let $R' \subseteq R$ be a subring. The inclusion map $i: R' \to R$ defined by $i(r') = r'$.
+\end{eg}
+\begin{eg}
+	The automorphism of conjugation on the gaussian integers defined by $a+bi \mt a-bi$.
+\end{eg}
+\begin{theorem}[Substitution Principle]
+	If $R$ is a ring and $r \in R$, then there exists a ring homomorphism
+	\begin{equation*}
+		\phi:R[x] \to R, \quad f(x)\mt f(r)
+	\end{equation*}
+	who's kernel is $(p(x))$, where $p(x)$ is the minimal polynomial satisfied by $r$.
+\end{theorem}
+\begin{proof}
+	Every polynomial $f(x) \in R[x]$ can be written uniquely as
+	\[
+	f(x) = \sum_{i=0}^n a_i x^i
+	\quad \text{with } a_i \in R.
+	\]
+	Define a map $\Phi : R[x] \to R'$ by
+	\[
+	\Phi(f) := \sum_{i=0}^n \phi(a_i)\alpha^i.
+	\]
+	
+	This map is well-defined since $\phi(a_i) \in R'$ and $\alpha^i \in R'$, and $R'$ is closed under addition and multiplication. For any $r \in R$ (viewed as a constant polynomial),
+	\[
+	\Phi(r) = \phi(r),
+	\]
+	so $\Phi|_R = \phi$. Moreover,
+	\[
+	\Phi(x) = \phi(1)\alpha = \alpha.
+	\]
+	
+	Now let
+	\[
+	f(x)=\sum a_i x^i, \quad g(x)=\sum b_i x^i.
+	\]
+	
+	\emph{Additivity:}
+	\[
+	\begin{aligned}
+		\Phi(f+g)
+		&= \Phi\!\left(\sum (a_i+b_i)x^i\right) \\
+		&= \sum \phi(a_i+b_i)\alpha^i \\
+		&= \sum (\phi(a_i)+\phi(b_i))\alpha^i \\
+		&= \Phi(f)+\Phi(g).
+	\end{aligned}
+	\]
+	
+	\emph{Multiplicativity:}
+	\[
+	\begin{aligned}
+		\Phi(fg)
+		&= \Phi\!\left(\sum_k \left(\sum_{i+j=k} a_i b_j\right)x^k\right) \\
+		&= \sum_k \phi\!\left(\sum_{i+j=k} a_i b_j\right)\alpha^k \\
+		&= \sum_k \sum_{i+j=k} \phi(a_i)\phi(b_j)\alpha^{i+j} \\
+		&= \left(\sum_i \phi(a_i)\alpha^i\right)
+		\left(\sum_j \phi(b_j)\alpha^j\right) \\
+		&= \Phi(f)\Phi(g).
+	\end{aligned}
+	\]
+	
+	Thus $\Phi$ is a ring homomorphism. Finally, suppose $\Psi : R[x] \to R'$ is another ring homomorphism such that
+	$\Psi|_R = \phi$ and $\Psi(x)=\alpha$. Then for any
+	$f(x)=\sum a_i x^i$,
+	\[
+	\Psi(f)=\sum \Psi(a_i)\Psi(x)^i
+	=\sum \phi(a_i)\alpha^i
+	=\Phi(f),
+	\]
+	so $\Psi=\Phi$. Hence $\Phi$ is unique.
+\end{proof}
+The substitution principle emphasizes the idea that evaluations of polynomials via \textit{substitution} of $x$ with a value $\alpha$ is not random. Every substitution that respects the ring rules is a ring homormophism and in fact, there is exactly one homomorphism for each choice of coefficient map and variable. Now, let $R'=R$, $\phi=\mathrm{id}_R$, and $\alpha=a\in R$ in the Substitution Principle. The resulting homomorphism
+\[
+\Phi : R[x] \to R
+\]
+satisfying $\Phi|_R=\mathrm{id}_R$ and $\Phi(x)=a$ is exactly the \emph{evaluation map}
+\[
+\operatorname{ev}_a(f)=f(a).
+\]
